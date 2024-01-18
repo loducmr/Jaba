@@ -1,0 +1,40 @@
+package madhav;
+
+interface Csm
+{
+    public void student();
+}
+interface Cse
+{
+    public void student();
+    public void faculty();
+}
+interface Csd
+{
+    public void hod();
+    public void faculty();
+}
+public class week3b implements Csm,Csd,Cse{
+    public void student()
+    {
+        System.out.println("CMRIT STUDENTS");
+    }
+    public void faculty()
+    {
+        System.out.println("CMRIT FACLTY");
+    }
+    public void hod()
+    {
+        System.out.println("Csd hod");
+    }
+    public static void main(String args[]){
+        week3b s=new week3b();
+        s.hod();
+        s.faculty();
+        s.student();
+    }
+}
+            
+            
+            
+            

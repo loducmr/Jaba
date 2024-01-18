@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class week1a {
+    public static void main(String[] args){
+    int a,b,c;
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter a,b,c values");
+    a=s.nextInt();
+    b=s.nextInt();
+    c=s.nextInt();
+    int d=b*b-4*a*c;
+    if(d<0)
+    {
+        System.out.println("n.r.v");
+    }
+    else {
+        double e=(-b+Math.sqrt(d))/2*a;
+        double f=(-b-Math.sqrt(d))/2*a;
+        System.out.println(e);
+        System.out.println(f);
+              
+    }
+    }
+}

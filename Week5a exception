@@ -1,0 +1,33 @@
+package madhav;
+
+import java.util.Scanner;
+public class Week5a {
+public static void main(String args[]) 
+{
+int a,b,i;
+Scanner x=new Scanner(System.in);
+System.out.println("enter a value");
+a=x.nextInt();
+System.out.println("enter b value");
+b=x.nextInt();
+System.out.println("enter index value");
+i=x.nextInt();
+int c[]=new int[5];
+try{
+c[i]=a/b;
+System.out.println(c[i]);
+}
+catch(ArrayIndexOutOfBoundsException ai)
+{
+    System.out.println(ai);
+}
+catch(ArithmeticException ae)
+{
+    System.out.println(ae);
+}
+finally
+{
+    System.out.println("cmrit");
+}
+}
+}

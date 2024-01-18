@@ -1,0 +1,17 @@
+class week3ab {
+    void add(int a,int b)
+    {
+        System.out.println(a+b);
+    }
+ }
+    class week3 extends week3ab{
+        void add(int a,int b)
+    {
+        System.out.println(a+b);
+    }
+        public static void main(String args[])
+        {
+            week3ab x=new week3ab();
+            x.add(20,30);
+        }                
+    }
